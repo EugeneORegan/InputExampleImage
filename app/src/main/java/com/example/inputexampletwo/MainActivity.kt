@@ -53,8 +53,8 @@ class MainActivity : ComponentActivity() {
                 )
             }
 
-            // Add 5 items
-            items(50) { index ->
+            // Add 50 items
+            items(10) { index ->
                 var counter = index+1
                 Text(text = "Item: $counter")
             }
@@ -62,6 +62,10 @@ class MainActivity : ComponentActivity() {
             // Add another single item
             item {
                 Text(text = "Last item")
+                Image(
+                    painter = painterResource(id = R.drawable.ccfc),
+                    contentDescription = null
+                )
             }
         }
     }
